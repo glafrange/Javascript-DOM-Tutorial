@@ -36,14 +36,12 @@ addForm.addEventListener('submit', function(e){
   
 });
 
-var book = document.querySelector('li:first-child .name');
-console.log(book.getAttribute('class'));
-console.log(book.getAttribute('href'));
-book.setAttribute('class', 'name-2');
-console.log(book);
-console.log(book.hasAttribute('class'));
-console.log(book.hasAttribute('href'));
-console.log(book.removeAttribute('class'));
-console.log(book);
-console.log(book.setAttribute('class', 'name'));
-console.log(book);
+// hide books
+const hideBox = document.querySelector('#hide');
+hideBox.addEventListener('change', function(e){
+  if(hideBox.checked){
+    list.style.display = "none";
+  } else {
+    list.style.display = "initial";
+  }
+})

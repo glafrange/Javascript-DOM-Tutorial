@@ -1,7 +1,10 @@
-console.log(document);
+var titles = document.getElementsByClassName('title');
 
-console.log(document.getElementById('page-banner'));
+/*console.log(Array.isArray(titles));
+console.log(Array.isArray(Array.from(titles)));*/
 
-var banner = document.getElementById('page-banner');
 
-console.log(banner);
+
+Array.from(titles).forEach(function(item) {
+  console.log(item);
+})

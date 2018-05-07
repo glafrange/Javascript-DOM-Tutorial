@@ -33,4 +33,17 @@ addForm.addEventListener('submit', function(e){
   li.appendChild(deleteBtn);
   list.appendChild(li)
   
+  
 });
+
+var book = document.querySelector('li:first-child .name');
+console.log(book.getAttribute('class'));
+console.log(book.getAttribute('href'));
+book.setAttribute('class', 'name-2');
+console.log(book);
+console.log(book.hasAttribute('class'));
+console.log(book.hasAttribute('href'));
+console.log(book.removeAttribute('class'));
+console.log(book);
+console.log(book.setAttribute('class', 'name'));
+console.log(book);

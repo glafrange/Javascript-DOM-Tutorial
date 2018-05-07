@@ -20,6 +20,10 @@ addForm.addEventListener('submit', function(e){
   const bookName = document.createElement('span');
   const deleteBtn = document.createElement('span');
   
+  // add classes
+  bookName.classList.add('name');
+  deleteBtn.classList.add('delete');
+  
   // add content
   bookName.textContent = value;
   deleteBtn.textContent = 'delete'; 
